@@ -120,4 +120,83 @@ a{
             padding-top: 20px;
         }
     }
+
+}
+
+.container-signin{
+    padding-top: 100px;
+    width: 50%;
+    padding-right: 25%;
+    padding-left: 25%;
+    text-align: left;
+    font-family: "Ubuntu";
+    fieldset {
+        display: block;
+        -webkit-margin-start: 2px;
+        -webkit-margin-end: 2px;
+        -webkit-padding-before: 0.35em;
+        -webkit-padding-start: 0.75em;
+        -webkit-padding-end: 0.75em;
+        -webkit-padding-after: 0.625em;
+        min-width: -webkit-min-content;
+        border-width: 0px;    
+
+        .form-group{
+            .email{
+                margin-bottom: 60px;
+            }
+            label{
+                font-size: 15px;
+                cursor: text;
+                color: #7f90a0;
+                -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                position: relative;
+                top: -14px;
+                font-weight: 300;
+                font-style: normal;
+            }
+            input{
+                border: none;
+                border-bottom-width: 1px;
+                border-bottom-color: rgba(41,70,97,0.2);
+                border-bottom-style: solid;
+                font: 300 16px;
+                color: #294661;
+                width: 100%;
+                border-radius: 0;
+                padding: 15px;
+                text-overflow: ellipsis;
+            }
+            .password {
+                margin-bottom: 0;
+            }
+            .forgot-password {
+                font-size: 13px;
+                position: relative;
+                top: 13px;
+                float: right;
+            }
+            .button {
+                display: inline-block;
+                vertical-align: middle;
+                padding: 13px 45px;
+                font-size: 15px;
+                background: none;
+                cursor: pointer;
+                line-height: normal;
+                border-radius: 2px;
+                -webkit-transition: all .3s ease;
+                transition: all .3s ease;
+                text-align: center;
+            }
+            .button-primary {
+                color: #fff;
+                border: 1px solid #2196f3;
+                background-color: rgba(33,150,243,0.8);
+                margin-bottom: 6px;
+                margin-top: 50px;
+            }
+        }
+    }
 }
