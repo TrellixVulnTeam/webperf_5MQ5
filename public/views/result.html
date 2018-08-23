@@ -1,10 +1,31 @@
-<div class="container-home">
+<div class="container">
        <div id="loader">
             <img src="http://gifimage.net/wp-content/uploads/2017/09/animated-loading-gif-transparent-background-6.gif">
             <br><br>
-            Running Script...
+            <div id="loader-text" style="padding-bottom: 20px;">Running Speed test...</div>
+            <div id="loader-audit" style="padding-bottom: 20px;"></div>
        </div>
-       <br><br>
-       
-       {{data}}
+       <div class="tabbed-content" id="result">
+        <nav role="tablist">
+            <a href ng:click="selected=1" ng-class="{active: selected == 1}" ng-init="selected=1">Speed</a>
+            <a href ng:click="selected=2" ng-class="{active: selected == 2}">Audit</a>
+            <a href ng:click="selected=3" ng-class="{active: selected == 3}">Load testing</a>
+            </nav>
+            
+            <div ng:show="selected == 1">
+                <h2>Speed</h2>
+                <p>{{data}}</p>
+                <img src="data:image/jpeg;base64,{{imageSource}}"/>
+            </div>
+            
+            <div ng:show="selected == 2">
+                <h2>Audit</h2>
+                <p>{{auditData}}<p>
+            </div>
+            
+            <div ng:show="selected == 3">
+                <h2>Load testing</h2>
+                <p>Coming soon.</p>
+            </div>
+        </div>
 </div>
